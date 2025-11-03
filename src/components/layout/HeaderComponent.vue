@@ -2,6 +2,8 @@
 import { inject, ref, onMounted, computed } from 'vue'
 import { routes } from '@/data/routes'
 import ThemeToggle from '@/components/ui/ThemeToggle.vue'
+import IconMenu from '@/components/icons/IconMenu.vue'
+import IconClose from '@/components/icons/IconClose.vue'
 
 const isDark = inject('isDark', ref(false))
 const toggleTheme = inject('toggleTheme', () => {})
@@ -72,22 +74,8 @@ onMounted(() => {
           @click="toggleMenu"
           aria-label="Toggle Menu"
         >
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              v-if="!isMenuOpen"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-            <path
-              v-else
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
+          <IconMenu v-if="!isMenuOpen" />
+          <IconClose v-else />
         </button>
       </div>
     </div>
@@ -101,7 +89,7 @@ onMounted(() => {
           v-for="route in routes"
           :key="route.path"
           :to="route.path"
-          class="text-neutral-700 dark:text-neutral-300 py-2 px-4 block"
+          class="text-neutral-700 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors py-2 px-4 block"
           active-class="text-primary-600 dark:text-primary-400 font-medium"
           @click="closeMenu"
         >
