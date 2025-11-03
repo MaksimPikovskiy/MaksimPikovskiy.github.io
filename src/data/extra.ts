@@ -1,3 +1,7 @@
 export const email = 'maksimpikovskiy@gmail.com'
+export const phone = '+1 (347) 772-6831'
 export const location = 'Brooklyn, NY, USA'
+export const name = 'Maksim Pikovskiy'
+export const homeTitle = 'Full-Stack Software Engineer'
+export const homeDescription = 'I build scalable and efficient web applications with a focus on performance and user experience.'
 export const footerDescription = 'Building Scalable Web Platforms'

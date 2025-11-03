@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { footerDescription, email, location } from '@/data/extra'
+import { name, footerDescription, email, phone, location } from '@/data/extra'
 import { socialLinks } from '@/data/socialLinks'
 import { routes } from '@/data/routes'
 
@@ -13,7 +13,7 @@ const currentYear = new Date().getFullYear()
         <div class="col-span-1 md:col-span-2">
           <div class="text-xl font-semibold flex items-center space-x-2 mb-4">
             <span class="text-primary-600 dark:text-primary-400">&lt;</span>
-            <span class="font-mono">Maksim Pikovskiy</span>
+            <span class="font-mono">{{ name }}</span>
             <span class="text-primary-600 dark:text-primary-400">/&gt;</span>
           </div>
           <p class="text-neutral-600 dark:text-neutral-300 mb-6">
@@ -57,6 +57,13 @@ const currentYear = new Date().getFullYear()
                 class="text-neutral-600 hover:text-primary-600 dark:text-neutral-300 dark:hover:text-primary-400 transition-colors"
               >
                 {{ email }}
+              </a>
+            </li>
+            <li class="flex items-start space-x-2">
+              <a
+                href="tel:{{ phone }}"
+                class="text-neutral-600 hover:text-primary-600 dark:text-neutral-300 dark:hover:text-primary-400 transition-colors"
+                >{{ phone }}
               </a>
             </li>
             <li class="flex items-start space-x-2">

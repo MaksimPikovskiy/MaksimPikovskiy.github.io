@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { inject, ref, onMounted, computed } from 'vue'
 import { routes } from '@/data/routes'
+import { name } from '@/data/extra'
 import ThemeToggle from '@/components/ui/ThemeToggle.vue'
 import IconMenu from '@/components/icons/IconMenu.vue'
 import IconClose from '@/components/icons/IconClose.vue'
@@ -49,7 +50,7 @@ onMounted(() => {
           @click="closeMenu"
         >
           <span class="text-primary-600 dark:text-primary-400">&lt;</span>
-          <span class="font-mono">Maksim Pikovskiy</span>
+          <span class="font-mono">{{ name }}</span>
           <span class="text-primary-600 dark:text-primary-400">/&gt;</span>
         </router-link>
 
