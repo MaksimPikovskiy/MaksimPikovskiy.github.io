@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import HomeSection from '@/components/ui/HomeSection.vue'
+import HomeSection from '@/components/layout/HomeSection.vue'
+import FeaturedProjectsSection from '@/components/layout/FeaturedProjectsSection.vue'
+// import SkillsSection from '@/components/layout/SkillsSection.vue'
 
 const animateOnScroll = () => {
   const elements = document.querySelectorAll('.appear-animation')
@@ -28,5 +30,7 @@ onMounted(() => {
 <template>
   <div>
     <HomeSection />
+    <FeaturedProjectsSection />
+    <!-- <SkillsSection /> -->
   </div>
 </template>
