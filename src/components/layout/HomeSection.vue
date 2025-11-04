@@ -3,7 +3,7 @@ import { name, homeTitle, homeDescription } from '@/data/extra'
 </script>
 
 <template>
-  <section class="min-h-screen flex items-center relative overflow-hidden">
+  <section class="section min-h-screen flex items-center relative overflow-hidden">
     <div class="container mx-auto px-4 md:px-6 py-20 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
         <div class="appear-animation col-span-2">
