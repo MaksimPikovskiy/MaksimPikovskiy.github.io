@@ -24,7 +24,7 @@ import { name, homeTitle, homeDescription } from '@/data/extra'
         <div class="hidden lg:flex justify-end appear-animation">
           <div class="relative w-full max-w-md aspect-square rounded-full">
             <img
-              src="@/assets/avatar.jpg"
+              src="/images/avatar.jpg"
               :alt="name"
               class="absolute inset-0 w-full h-full object-cover rounded-full border-2 border-primary-600 dark:border-primary-400"
             />

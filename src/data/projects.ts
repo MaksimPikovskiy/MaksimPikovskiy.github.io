@@ -7,7 +7,7 @@ export const projects: Project[] = [
     description:
       'As part of MHC+MTA Datathon 2025, our team developed a data-driven model to identify high-risk bus routes and neighborhoods using MTA Open Data (ACE/ABLE violations, bus speeds, and ridership). The project combined statistical analysis and visualization to surface accident-prone areas and power a live website for interactive risk scoring. Selected as a Top-20 Finalist and received an Honorable Mention.',
     isFeatured: true,
-    coverImage: 'images/projects/mhc-datathon-2025/mhc-datathon-presentation.jpg',
+    coverImage: '/images/projects/mhc-datathon-2025/mhc-datathon-presentation.jpg',
     tags: ['Data Analysis', 'Visualization', 'Web Development', 'React'],
     technologies: ['Python', 'React.js', 'Pandas', 'GeoPandas', 'Plotly'],
     role: 'Data Engineer & Frontend Developer',
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     description:
       'Designed and implemented a perception stack for autonomous driving vehicles using LiDAR-based 3D point clouds. The system detects vehicles, estimates their 3D bounding boxes, positions, and motion vectors with high precision and low latency.',
     isFeatured: true,
-    coverImage: 'images/projects/perception-stack/cover.png',
+    coverImage: '/images/projects/perception-stack/cover.png',
     tags: ['Computer Vision', '3D Processing', 'Autonomous Systems', 'Python'],
     technologies: ['Python', 'NumPy', 'Open3D', 'Point Cloud Processing'],
     role: 'Computer Vision Engineer',
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     description:
       'Developed a stackable data acquisition and visualization system for RIT Baja’s off-road vehicle based on Raspberry Pi and custom sensor Arduino-based boards. Designed and implemented the Python-based application architecture, data collection algorithms, and graphical user interface for real-time sensor monitoring and analysis.',
     isFeatured: true,
-    coverImage: 'images/projects/sdaq/cover.jpg',
+    coverImage: '/images/projects/sdaq/cover.jpg',
     tags: ['Embedded Systems', 'Python', 'UI/UX', 'Data Collection'],
     technologies: ['Python', 'Tkinter', 'RPIO', 'Raspberry Pi'],
     role: 'Software Engineer',
