@@ -23,7 +23,7 @@ defineProps<{
           <span
             v-for="tag in project.tags"
             :key="tag"
-            class="px-3 py-1 rounded-full text-xs font-medium bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300"
+            class="px-3 py-1 rounded-full text-xs font-medium bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-center"
           >
             {{ tag }}
           </span>
