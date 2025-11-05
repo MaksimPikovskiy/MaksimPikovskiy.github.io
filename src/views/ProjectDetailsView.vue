@@ -133,7 +133,11 @@ onMounted(() => {
               class="rounded-xl overflow-hidden shadow-md appear-animation"
               :style="{ 'transition-delay': `${index * 0.1}s` }"
             >
-              <img :src="image" :alt="`${project.tile} image ${index + 1}`" class="w-full h-auto" />
+              <img
+                :src="image"
+                :alt="`${project.title} image ${index + 1}`"
+                class="w-full h-auto"
+              />
             </div>
           </div>
 

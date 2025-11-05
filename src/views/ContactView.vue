@@ -279,7 +279,7 @@ onMounted(() => {
                 width="100%"
                 height="100%"
                 style="border: 0; border-radius: 0.5rem"
-                allowfullscreen=""
+                allowfullscreen="false"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               />
