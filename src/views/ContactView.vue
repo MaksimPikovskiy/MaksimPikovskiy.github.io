@@ -271,7 +271,7 @@ onMounted(() => {
       <div class="container mx-auto px-4 md:px-6">
         <div class="max-w-6xl mx-auto appear-animation">
           <div class="bg-white dark:bg-neutral-800 p-2 rounded-xl shadow-md overflow-hidden">
-            <div class="aspect-[16/9] w-full bg-neutral-200 dark:bg-neutral-700 rounded-lg">
+            <div class="aspect-video w-full bg-neutral-200 dark:bg-neutral-700 rounded-lg">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24235.223173482846!2d-73.95731548776125!3d40.598933620260475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24484c8d1f91f%3A0x2d5e60da0876598c!2sBrooklyn%2C%20NY%2011229!5e0!3m2!1sen!2sus!4v1762302138706!5m2!1sen!2sus"
                 width="100%"

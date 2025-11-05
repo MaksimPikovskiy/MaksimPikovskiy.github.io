@@ -9,7 +9,7 @@ export const projects: Project[] = [
     isFeatured: true,
     coverImage: '/images/projects/mhc-datathon-2025/mhc-datathon-presentation.jpg',
     tags: ['Data Analysis', 'Visualization', 'Web Development', 'React'],
-    technologies: ['Python', 'React.js', 'Pandas', 'GeoPandas', 'Plotly'],
+    technologies: ['TypeScript', 'React.js', 'Python', 'Pandas', 'GeoPandas', 'Leaflet', 'Recharts'],
     role: 'Data Engineer & Frontend Developer',
     duration: 'Sep 2025 - Sep 2025',
     overview:
@@ -49,8 +49,8 @@ export const projects: Project[] = [
     liveUrl: '',
     sourceCode: 'https://github.com/MaksimPikovskiy/Perception_Stack',
     images: [
-      'https://github.com/MaksimPikovskiy/Perception_Stack/blob/83c9db5202097ca4c5d662bb55adfd114ffd3300/Intersection%20v2.gif',
-      'https://github.com/MaksimPikovskiy/Perception_Stack/blob/83c9db5202097ca4c5d662bb55adfd114ffd3300/Full%20Point%20Cloud%20Animation.gif',
+      'https://github.com/MaksimPikovskiy/Perception_Stack/blob/83c9db5202097ca4c5d662bb55adfd114ffd3300/Intersection%20v2.gif?raw=true',
+      'https://github.com/MaksimPikovskiy/Perception_Stack/blob/83c9db5202097ca4c5d662bb55adfd114ffd3300/Full%20Point%20Cloud%20Animation.gif?raw=true',
     ],
   },
   {

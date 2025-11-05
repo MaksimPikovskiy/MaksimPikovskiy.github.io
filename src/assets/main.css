@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import 'tailwindcss';
+@plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -70,6 +71,10 @@ button {
 
 .cta-button-secondary {
   @apply inline-flex items-center px-6 py-3 rounded-lg bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-white font-medium transition-all hover:bg-neutral-300 dark:hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-700 focus:ring-offset-2;
+}
+
+.source-code-button {
+  @apply inline-flex items-center px-6 py-3 rounded-lg bg-neutral-200 dark:bg-neutral-900 text-neutral-800 dark:text-white font-medium transition-all hover:bg-neutral-300 dark:hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-700 focus:ring-offset-2;
 }
 
 .app-wrapper {
