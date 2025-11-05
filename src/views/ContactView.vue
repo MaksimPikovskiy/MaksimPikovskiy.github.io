@@ -245,7 +245,9 @@ onMounted(() => {
                   :disabled="isSubmitting"
                 >
                   <span v-if="isSubmitting">Sending...</span>
-                  <div v-else>Send Message <IconSend class="inline-block ml-2" /></div>
+                  <div v-else class="flex items-center justify-center">
+                    Send Message <IconSend class="inline-block ml-2" />
+                  </div>
                 </button>
               </div>
 

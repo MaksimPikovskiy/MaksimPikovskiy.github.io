@@ -8,7 +8,7 @@ import { name, homeTitle, homeDescription } from '@/data/extra'
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
         <div class="appear-animation col-span-2">
           <h1
-            class="text-4xl md:text-5xl lg:text-6xl font bold text-neutral-900 dark:text-white leading-tight mb-6"
+            class="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 dark:text-white leading-tight mb-6"
           >
             Hi, I am <span class="text-primary-600 dark:text-primary-400"> {{ name }} </span>
             <div class="mt-2">{{ homeTitle }}</div>

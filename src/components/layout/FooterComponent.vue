@@ -53,7 +53,7 @@ const currentYear = new Date().getFullYear()
           <ul class="space-y-2">
             <li class="flex items-start space-x-2">
               <a
-                href="mailto:{{ email }}"
+                :href="`mailto:${email}`"
                 class="text-neutral-600 hover:text-primary-600 dark:text-neutral-300 dark:hover:text-primary-400 transition-colors"
               >
                 {{ email }}
@@ -61,7 +61,7 @@ const currentYear = new Date().getFullYear()
             </li>
             <li class="flex items-start space-x-2">
               <a
-                href="tel:{{ phone }}"
+                :href="`tel:${phone}`"
                 class="text-neutral-600 hover:text-primary-600 dark:text-neutral-300 dark:hover:text-primary-400 transition-colors"
                 >{{ phone }}
               </a>
