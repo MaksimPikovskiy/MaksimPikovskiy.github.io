@@ -11,7 +11,7 @@
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
-    "deploy": "git checkout main && rm -rf dist && git worktree prune && git worktree add dist gh-pages && npm run build && cd dist && git add . && git diff-index --quiet HEAD || git commit -m 'Deploy site' && git push origin gh-pages && cd .."
+    "deploy": "git checkout main && rm -rf dist && git worktree prune && git worktree add dist gh-pages && npm run build && cd dist && cp index.html 404.html && git add . && git diff-index --quiet HEAD || git commit -m 'Deploy site' && git push origin gh-pages && cd .."
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
