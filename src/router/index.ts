@@ -30,7 +30,7 @@ const router = createRouter({
       name: 'contact',
       component: () => import('@/views/ContactView.vue'),
     },
-    { path: '*', component: HomeView },
+    { path: '/:catchAll(.*)', redirect: '/' },
   ],
   scrollBehavior(to, _from, savedPosition) {
     if (savedPosition) {
