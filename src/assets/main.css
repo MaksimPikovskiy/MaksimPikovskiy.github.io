@@ -127,10 +127,10 @@ button {
 .timeline-item-main:last-child::after {
   content: '';
   position: absolute;
-  left: -2.125rem;
+  left: -2.25rem;
   top: 3rem;
   bottom: -3rem;
-  width: 2px;
+  width: 6px;
   background: white;
 }
 
@@ -141,10 +141,10 @@ button {
 .timeline-item:last-child::after {
   content: '';
   position: absolute;
-  left: -2.125rem;
+  left: -2.25rem;
   top: 3rem;
   bottom: -3rem;
-  width: 2px;
+  width: 6px;
   background: #fafafa;
 }
 

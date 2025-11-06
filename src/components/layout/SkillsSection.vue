@@ -33,7 +33,7 @@ const filteredSkills = computed(() => {
     <div class="container mx-auto px-4 md:px-6">
       <SectionHeading title="My Skills" subtitle="Technologies and tools I have worked with" />
 
-      <div class="flex flex-row gap-2 mb-6 justify-center">
+      <div class="flex flex-wrap gap-2 mb-6 justify-center">
         <button
           v-for="category in skillCategories"
           :key="category"
