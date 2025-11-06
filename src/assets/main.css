@@ -113,11 +113,41 @@ button {
 
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.3s, transform 0.3s;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
 }
 
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
   transform: translateY(10px);
+}
+
+.timeline-item-main:last-child::after {
+  content: '';
+  position: absolute;
+  left: -2.125rem;
+  top: 3rem;
+  bottom: -3rem;
+  width: 2px;
+  background: white;
+}
+
+.dark .timeline-item-main:last-child::after {
+  background: #171717;
+}
+
+.timeline-item:last-child::after {
+  content: '';
+  position: absolute;
+  left: -2.125rem;
+  top: 3rem;
+  bottom: -3rem;
+  width: 2px;
+  background: #fafafa;
+}
+
+.dark .timeline-item:last-child::after {
+  background: #171717;
 }

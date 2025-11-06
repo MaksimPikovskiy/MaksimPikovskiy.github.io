@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { name, homeTitle, homeDescription } from '@/data/extra'
+import { name, yearsOfXP, homeTitle, homeDescription } from '@/data/extra'
 </script>
 
 <template>
@@ -28,6 +28,11 @@ import { name, homeTitle, homeDescription } from '@/data/extra'
               :alt="name"
               class="absolute inset-0 w-full h-full object-cover rounded-full border-2 border-primary-600 dark:border-primary-400"
             />
+            <span
+              class="absolute right-6 bottom-12 bg-primary-600 dark:bg-primary-400 rounded-2xl px-3 py-1 font-bold text-md text-white dark:text-neutral-700 border-2 border-white dark:border-neutral-900"
+              >{{ yearsOfXP }} <br />
+              <span class="font-medium"> of experience </span></span
+            >
           </div>
         </div>
       </div>

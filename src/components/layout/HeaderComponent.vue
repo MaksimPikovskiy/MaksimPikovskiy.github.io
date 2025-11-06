@@ -67,7 +67,9 @@ onMounted(() => {
 
           <ThemeToggle @toggle="toggleTheme" :is-dark="isDark" />
 
-          <a href="resume.pdf" target="_blank" class="cta-button"> Resume </a>
+          <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="cta-button">
+            Resume
+          </a>
         </nav>
 
         <button
@@ -99,7 +101,9 @@ onMounted(() => {
 
         <div class="flex items-center justify-between py-2 px-4">
           <ThemeToggle @toggle="toggleTheme" :is-dark="isDark" />
-          <a href="resume.pdf" target="_blank" class="cta-button"> Resume </a>
+          <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="cta-button">
+            Resume
+          </a>
         </div>
       </nav>
     </div>
