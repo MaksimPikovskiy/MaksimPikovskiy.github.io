@@ -146,17 +146,31 @@ onMounted(() => {
           >
             <div>
               <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-2">
-                Visit <span v-if="project.liveUrl.length">the live project or its</span>
-                <span v-else> the </span> source code
+                <span v-if="project.liveUrl.length || project.sourceCode.length">
+                  Visit <span v-if="project.liveUrl.length">the live project </span>
+                  <span v-if="project.liveUrl.length && project.sourceCode.length">or its </span>
+                  <span v-if="project.sourceCode.length"
+                    ><span v-if="!project.liveUrl.length"> the </span> source code</span
+                  >
+                </span>
+                <span v-else>
+                  The project is currently not hosted and does not have source code available
+                </span>
               </h3>
               <p class="text-neutral-600 dark:text-neutral-400">
-                See the
-                <span v-if="project.liveUrl.length"> final result in action or browse its </span>
-                codebase
+                <span v-if="project.liveUrl.length || project.sourceCode.length">
+                  See the
+                  <span v-if="project.liveUrl.length"> final result in action </span>
+                  <span v-if="project.liveUrl.length && project.sourceCode.length"
+                    >or browse its
+                  </span>
+                  <span v-if="project.sourceCode.length">codebase</span>
+                </span>
               </p>
             </div>
             <div class="flex space-x-2 items-center">
               <a
+                v-if="project.sourceCode.length"
                 :href="project.sourceCode"
                 target="_blank"
                 rel="noopener noreferrer"
