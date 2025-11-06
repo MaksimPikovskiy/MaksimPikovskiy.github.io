@@ -11,6 +11,7 @@ export const skills = [
   { name: 'CSS3', icon: 'css3', category: 'frontend' },
   { name: 'ESLint', icon: 'eslint', category: 'frontend' },
   { name: 'Vite', icon: 'vitejs', category: 'frontend' },
+  { name: 'Electron', icon: 'electron', category: 'frontend' },
   { name: 'React Native', icon: 'reactnative', category: 'frontend' },
   { name: 'Expo', icon: 'expo', category: 'frontend' },
   { name: 'Node.js', icon: 'nodejs', category: 'backend' },
@@ -20,6 +21,7 @@ export const skills = [
   { name: '.NET Core', icon: 'dotnetcore', category: 'backend' },
   { name: 'Java', icon: 'java', category: 'backend' },
   { name: 'Apache Spark', icon: 'apachespark', category: 'backend' },
+  { name: 'Go', icon: 'go', category: 'backend', wordmark: true },
   { name: 'Python', icon: 'python', category: 'backend' },
   { name: 'Django', icon: 'django', category: 'backend', isPlain: true },
   { name: 'Flask', icon: 'flask', category: 'backend' },
@@ -68,4 +70,5 @@ export const skills = [
   { name: 'Swagger', icon: 'swagger', category: 'tools' },
   { name: 'Visual Studio Code', icon: 'vscode', category: 'tools' },
   { name: 'Visual Studio', icon: 'visualstudio', category: 'tools' },
+  { name: 'FileZilla', icon: 'filezilla', category: 'tools', isPlain: true },
 ]
