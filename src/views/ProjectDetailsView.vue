@@ -17,6 +17,9 @@ watch(project, (value) => {
   }
 })
 
+const hasSource = computed(() => project.value?.sourceCode?.length)
+const hasLive = computed(() => project.value?.liveUrl?.length)
+
 const previousProject = computed(() => {
   if (!project.value) return null
   const currentIndex = projects.findIndex((p) => p.id === projectId.value)
@@ -146,31 +149,27 @@ onMounted(() => {
           >
             <div>
               <h3 class="text-xl font-semibold text-neutral-900 dark:text-white mb-2">
-                <span v-if="project.liveUrl.length || project.sourceCode.length">
-                  Visit <span v-if="project.liveUrl.length">the live project </span>
-                  <span v-if="project.liveUrl.length && project.sourceCode.length">or its </span>
-                  <span v-if="project.sourceCode.length"
-                    ><span v-if="!project.liveUrl.length"> the </span> source code</span
-                  >
+                <span v-if="hasLive || hasSource">
+                  Visit <span v-if="hasLive">the live project </span>
+                  <span v-if="hasLive && hasSource">or its </span>
+                  <span v-if="hasSource"><span v-if="!hasLive"> the </span> source code</span>
                 </span>
                 <span v-else>
                   The project is currently not hosted and does not have source code available
                 </span>
               </h3>
               <p class="text-neutral-600 dark:text-neutral-400">
-                <span v-if="project.liveUrl.length || project.sourceCode.length">
+                <span v-if="hasLive || hasSource">
                   See the
-                  <span v-if="project.liveUrl.length"> final result in action </span>
-                  <span v-if="project.liveUrl.length && project.sourceCode.length"
-                    >or browse its
-                  </span>
-                  <span v-if="project.sourceCode.length">codebase</span>
+                  <span v-if="hasLive"> final result in action </span>
+                  <span v-if="hasLive && hasSource">or browse its </span>
+                  <span v-if="hasSource">codebase</span>
                 </span>
               </p>
             </div>
             <div class="flex space-x-2 items-center">
               <a
-                v-if="project.sourceCode.length"
+                v-if="hasSource"
                 :href="project.sourceCode"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -180,7 +179,7 @@ onMounted(() => {
                 Source Code
               </a>
               <a
-                v-if="project.liveUrl.length"
+                v-if="hasLive"
                 :href="project.liveUrl"
                 target="_blank"
                 rel="noopener noreferrer"
