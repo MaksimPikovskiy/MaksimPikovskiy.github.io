@@ -4,11 +4,12 @@ export const experience = [
     position: 'Founding Engineer',
     period: 'January 2024 - Present',
     description: [
-      'Conducted comprehensive market research showing that 64% of Americans report negative effects from social media.',
-      'Led interviews with 100+ potential users to gather insights on desired features, resulting in a prioritized feature roadmap for platform development.',
-      'Redesigned the backend infrastructure into a serverless architecture, reducing server hosting costs by 90% and improving scalability.',
-      'Collaborating with cross-functional teams, including CEOs, marketers, and designers, to refine and ensure the scalability of a digital platform for artists, and to focus on aligning business and user goals.',
-      'Designing and implementing a full-stack digital platform for artists using Next.js, Python (psycopg), PostgreSQL, and AWS (API Gateway, Lambdas, Cognito, Amplify, and Aurora DSQL), which will enhance authentic content sharing features and ensure scalability to accommodate growing user base.',
+      'Built and deployed a production platform for artist communities using Next.js, Python (psycopg), and PostgreSQL.',
+      'Migrated backend to AWS serverless architecture (Lambda + API Gateway + Aurora), improving scalability and lowering hosting costs by 90%.',
+      'Implemented secure authentication and authorization flows using AWS Cognito and Amplify, and developed REST APIs supporting user content publishing and social interactions.',
+      'Architected data models and optimized query performance to support scalable content retrieval.',
+      'Collaborated with designers and content leads to translate workflow requirements into system features.',
+      'Mentored another engineer on backend development workflows, including AWS Lambda routing, PostgreSQL schema changes, and debugging distributed application logic.'
     ],
   },
   {
@@ -16,9 +17,9 @@ export const experience = [
     position: 'Research Assistant',
     period: 'November 2024 - June 2025',
     description: [
-      'Led technical development and mentored BMCC students for a project from an AI Innovation Challenge, architecting both frontend implementation and AI integration strategy.',
-      'Developed responsive frontend application using React.js while collaborating with the BMCC students on Python-based AI API integration for seamless data flow.',
-      'Spearheaded end-to-end product design through Figma wireframes and workflow architecture, ensuring alignment between UI/UX design and AI functionality requirements.',
+      'Led frontend and backend integration for an AI-powered web tool with React + Python APIs.',
+      'Guided students in software design workflows, code structuring, and deployment practices.',
+      'Coordinated UI/UX design translation from Figma prototypes into responsive components.',
     ],
   },
   {

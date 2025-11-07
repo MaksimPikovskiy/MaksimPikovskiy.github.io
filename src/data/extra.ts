@@ -3,16 +3,16 @@ export const phone = '+1 (347) 772-6831'
 export const location = 'Brooklyn, NY, USA'
 
 export const name = 'Maksim Pikovskiy'
-export const yearsOfXP = '4+ years'
+export const yearsOfXP = '3+ years'
 
 export const homeTitle = 'Full-Stack Software Engineer'
 export const homeDescription =
-  'I build scalable and efficient web applications with a focus on performance and user experience.'
+  'I build scalable and efficient applications with a focus on performance and user experience.'
 
-export const footerDescription = 'Building Scalable Web Platforms'
+export const footerDescription = 'Building Scalable & Efficient Applications'
 
 export const aboutMe = [
-  'I am a meticulous software engineer with a focus on creating user-friendly applications and resilient APIs (like an old reliable Toyota engine). With over 4 years of experience in the industry, I have worked on a variety of projects ranging from portfolio and small business websites to complex web applications, like social media platforms and business rules engine providers for CAD Engineers.',
+  'I am a meticulous software engineer with a focus on creating user-friendly applications and resilient APIs (like an old reliable Toyota engine). With over 3 years of experience in the industry, I have worked on a variety of projects ranging from portfolio and small business websites to complex web applications, like social media platforms and business rules engine providers for CAD Engineers.',
   'My approach to development is centered around understanding user needs and business goals, then translating those into successful products. I believe in writing code that is not only functional but also maintainable and scalable.',
 ]
 
