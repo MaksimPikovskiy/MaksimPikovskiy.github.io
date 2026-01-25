@@ -44,6 +44,17 @@ export const experience = [
     ],
   },
   {
+    company: 'Ambiance Style',
+    position: 'IT Technician',
+    period: 'October 2019 - January 2023',
+    description: [
+      'Built and configured high-performance workstations for AutoCAD, Orgadata, Adeko, and other industry-specific manufacturing software.',
+      'Installed and maintained network infrastructure, including routers, Wi-Fi access points, and security cameras.',
+      'Performed hardware repairs, OS installations, and system upgrades to improve reliability and performance.',
+      'Provided on-site technical support and troubleshooting for day-to-day IT issues.',
+    ],
+  },
+  {
     company: 'IPG Mediabrands',
     position: 'IT Technician Intern',
     period: 'July 2019 - August 2019',

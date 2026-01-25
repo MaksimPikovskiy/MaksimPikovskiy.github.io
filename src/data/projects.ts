@@ -25,6 +25,47 @@ export const projects: Project[] = [
     images: [],
   },
   {
+    id: 'policypulse',
+    title: 'PolicyPulse',
+    description:
+      'An AI-powered web platform that analyzes government policy language to identify which industries and companies are most likely to benefit or be impacted, enabling faster, policy-driven investment decisions.',
+    isFeatured: false,
+    coverImage: '/images/projects/policypulse/cover.png',
+    tags: [
+      'Hackathon',
+      'FinTech',
+      'AI',
+      'APIs',
+      'Full Stack',
+      'Policy Analysis'
+    ],
+    technologies: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Supabase',
+      'Tailwind CSS',
+      'shadcn/ui',
+      'Fuse.js',
+      'OpenRouter',
+      'Google Gemini 2.5 Flash',
+      'Congress API'
+    ],
+    role: 'Full Stack Developer',
+    duration: 'November 2025 - November 2025',
+    overview:
+      'Built for MLH HackNYU Fall 2025, PolicyPulse automates policy-driven investment research by scraping Congressional bills, analyzing legislative language with AI, and surfacing industries and companies most affected by upcoming policy changes.',
+    challenge:
+      'Transforming complex legislative data into clear, actionable insights while building a functional full-stack application within a hackathon timeframe.',
+    solution:
+      'Implemented a Next.js platform with authenticated routes, real-time bill ingestion, AI-powered keyword and wording analysis, industry impact scoring, and automated company recommendations using OpenRouter and Google Gemini 2.5 Flash.',
+    results:
+      'Delivered a fully functional demo that converts complex government policy into structured investment intelligence, reducing hours of manual research into seconds of automated analysis.',
+    liveUrl: 'https://hack-nyu-rosy.vercel.app/',
+    sourceCode: 'https://github.com/MaksimPikovskiy/hackNYU',
+    images: ['/images/projects/policypulse/cover.png', '/images/projects/policypulse/mainpage.png'],
+  },
+  {
     id: 'maksimpikovskiy-portfolio',
     title: 'MaksimPikovskiy.github.io',
     description: 'My personal portfolio website to showcase projects, skills, and experience.',
@@ -53,7 +94,7 @@ export const projects: Project[] = [
       'As part of MHC+MTA Datathon 2025, our team developed a data-driven model to identify high-risk bus routes and neighborhoods using MTA Open Data (ACE/ABLE violations, bus speeds, and ridership). The project combined statistical analysis and visualization to surface accident-prone areas and power a live website for interactive risk scoring. Selected as a Top-20 Finalist and received an Honorable Mention.',
     isFeatured: true,
     coverImage: '/images/projects/mhc-datathon-2025/mhc-datathon-presentation.jpg',
-    tags: ['Data Analysis', 'Visualization', 'Web Development', 'React'],
+    tags: ['Datathon', 'Hackathon', 'Data Analysis', 'Visualization', 'Web Development', 'React'],
     technologies: [
       'TypeScript',
       'React.js',
