@@ -115,7 +115,7 @@ onMounted(() => {
             </h3>
 
             <div class="space-y-6">
-              <div class="flex items-start space-x-4">
+              <!-- <div class="flex items-start space-x-4">
                 <div
                   class="bg-primary-100 dark:bg-primary-900/30 p-3 rounded-lg text-primary-600 dark:text-primary-400"
                 >
@@ -125,7 +125,7 @@ onMounted(() => {
                   <h4 class="text-lg font-medium text-neutral-900 dark:text-white">Phone</h4>
                   <p class="text-neutral-600 dark:text-neutral-400">{{ phone }}</p>
                 </div>
-              </div>
+              </div> -->
 
               <div class="flex items-start space-x-4">
                 <div
@@ -275,7 +275,7 @@ onMounted(() => {
           <div class="bg-white dark:bg-neutral-800 p-2 rounded-xl shadow-md overflow-hidden">
             <div class="aspect-video w-full bg-neutral-200 dark:bg-neutral-700 rounded-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24235.223173482846!2d-73.95731548776125!3d40.598933620260475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24484c8d1f91f%3A0x2d5e60da0876598c!2sBrooklyn%2C%20NY%2011229!5e0!3m2!1sen!2sus!4v1762302138706!5m2!1sen!2sus"
+                src="https://www.google.com/maps?q=Brooklyn,+NY&output=embed"
                 width="100%"
                 height="100%"
                 style="border: 0; border-radius: 0.5rem"

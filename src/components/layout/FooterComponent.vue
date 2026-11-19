@@ -59,13 +59,13 @@ const currentYear = new Date().getFullYear()
                 {{ email }}
               </a>
             </li>
-            <li class="flex items-start space-x-2">
+            <!-- <li class="flex items-start space-x-2">
               <a
                 :href="`tel:${phone}`"
                 class="text-neutral-600 hover:text-primary-600 dark:text-neutral-300 dark:hover:text-primary-400 transition-colors"
                 >{{ phone }}
               </a>
-            </li>
+            </li> -->
             <li class="flex items-start space-x-2">
               <span class="text-neutral-600 dark:text-neutral-300">{{ location }}</span>
             </li>

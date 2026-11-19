@@ -1,5 +1,5 @@
 export const email = 'maksimpikovskiy@gmail.com'
-export const phone = '+1 (347) 772-6831'
+export const phone = ''
 export const location = 'Brooklyn, NY, USA'
 
 export const name = 'Maksim Pikovskiy'
